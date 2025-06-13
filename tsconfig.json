@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2022", // Modern JS output
+    "module": "CommonJS", // Node.js module system
+    "rootDir": "./src", // Your source code directory
+    "outDir": "./dist", // Compiled output goes here
+    "removeComments": true, // Optional: Removes comments from output
+    "strict": true, // Enables all strict type-checking options
+
+    /* Module Resolution */
+    "moduleResolution": "node", // Node-style resolution
+    "esModuleInterop": true, // Allows `import express from 'express'`
+    "forceConsistentCasingInFileNames": true, // Avoid file-name case issues (especially on Linux)
+    "resolveJsonModule": true, // Allow importing JSON files
+    "allowSyntheticDefaultImports": true, // Helps with ES6-style imports
+
+    /* Type Checking */
+    "noImplicitAny": true, // Raise error on variables with `any` type
+    "strictNullChecks": true, // Catch undefined/null errors
+    "noUnusedLocals": true, // Warn on unused local variables
+    "noUnusedParameters": false, // You can enable if strict on unused args
+    "noFallthroughCasesInSwitch": true, // Prevents accidental case fallthrough
+    "skipLibCheck": true, // Faster compilation by skipping library type checks
+
+    /* Source Maps */
+    "sourceMap": true, // Helpful for debugging in dev
+    "inlineSources": true, // Include source code in map files
+
+    /* Experimental */
+    "experimentalDecorators": true, // For decorators (e.g., class validators)
+    "emitDecoratorMetadata": true // Needed if you use decorators with reflection
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
